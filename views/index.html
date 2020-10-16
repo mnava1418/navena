@@ -1,18 +1,64 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Author Meta -->
     <meta name="author" content="Daniela">
     <!-- Meta Description -->
     <meta name="description" content="">
     <!-- Meta Keyword -->
     <meta name="keywords" content="">
-    
+    <link rel="icon" type="image/png" href="/public/images/navena.ico"/>
     <title>Navena</title>
-    <!--<link rel="icon" type="image/png" href="images/icons/elberIcon.ico"/>-->
+    
+    <!--CSS Links-->
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="/public/stylesheets/style.css"/>
 </head>
 <body>
-    
+    <!--Home Section-->
+    <section id="home">
+        <header id="header" class="header">
+            <div id="header-container" class="header-container">
+                <nav class="navbar navbar-expand-lg navbar-light navbar-main">
+                    <a class="navbar-brand" style="padding: 0;" href="/views/index.html"><div id="logo" class="logo"></div></a>
+                    <button class="navbar-toggler" style="margin-right: 8px;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navbar-menu" id="navbarNav">
+                        <ul class="navbar-nav navbar-items">
+                            <li class="nav-item" style="margin-left: 8px;">
+                                <a class="nav-link nav-link-text" href="#home" onclick="menuItemSelected(this)">Inicio</a>
+                            </li>
+                            <li class="nav-item" style="margin-left: 8px;">
+                                <a class="nav-link nav-link-text" href="#home" onclick="menuItemSelected(this)">Nosotros</a>
+                            </li>
+                            <li class="nav-item" style="margin-left: 8px;">
+                                <a class="nav-link nav-link-text" href="#home" onclick="menuItemSelected(this)">Servicios</a>
+                            </li>
+                            <li class="nav-item" style="margin-left: 8px;">
+                                <a class="nav-link nav-link-text" href="#home" onclick="menuItemSelected(this)">Retos</a>
+                            </li>
+                            <li class="nav-item" style="margin-left: 8px;">
+                                <a class="nav-link nav-link-text" href="#home" onclick="menuItemSelected(this)">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main id="main" class="banner-area banner-area-white main-banner">
+        </main>
+    </section>
+    <!--End Home Section-->
+    <!--Footer-->
+    <footer id="footer" class="footer"></footer>
+    <!--End Footer-->
+
+    <!--Javascript links-->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="/public/javascripts/bootstrap.bundle.min.js"></script>
+    <script src="/public/javascripts/main.js"></script>
 </body>
 </html>
