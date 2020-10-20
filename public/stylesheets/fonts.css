@@ -30,3 +30,10 @@ font-style: normal;
 font-weight: normal;
 src: local('CMU Serif BoldItalic'), url('../fonts/cmunbi.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Cerebri Sans';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cerebri Sans'), url('../fonts/CerebriSansPro-Regular.ttf') format('ttf');
+}
