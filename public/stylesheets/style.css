@@ -119,7 +119,7 @@ h3 {
   width: var(--headerSize);
   height: var(--headerSize);
   background-color: var(--mainGreen);
-  background-image: url('/public/images/navena.jpg');
+  background-image: url('../images/navena.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -184,7 +184,7 @@ h3 {
   padding-top: var(--headerSize);
   width: 100%;
   height: 100%;
-  background-image: url('/public/images/mainBackground.jpg');
+  background-image: url('../images/mainBackground.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -192,7 +192,7 @@ h3 {
 .main-image {
   width: 100%;
   padding-top: 100%;
-  background-image: url('/public/images/mainImg.jpeg');
+  background-image: url('../images/mainImg.jpeg');
   background-size: cover;
   border-radius: 50%;
 }
