@@ -169,6 +169,7 @@ p {
   height: 100%;
   background-color: var(--mainGreen);
   padding: 0px;
+  z-index: 1;
 }
 
 .navbar-menu {
