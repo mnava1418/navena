@@ -14,6 +14,17 @@ module.exports = {
         'Diagnóstico nutricional',
         '2 Menús personalizados',
         'Lista de alimentos intercambiables',
-        'Asesorías en WhatsApp'
+        'Asesorías en WhatsApp',
+        'Diagnóstico de composición corporal(*presencial)'        
+    ],
+    consultas: [
+        {
+            name: 'Presencial',
+            price: '$500'
+        },
+        {
+            name: 'Online',
+            price: '$450'
+        }
     ]
 }
