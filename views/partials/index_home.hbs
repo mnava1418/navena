@@ -9,21 +9,11 @@
                 </button>
                 <div class="collapse navbar-collapse navbar-menu" id="navbarNav">
                     <ul class="navbar-nav navbar-items">
-                        <li class="nav-item" style="margin-left: 8px;">
-                            <a class="nav-link nav-link-text" href="#home" onclick="menuItemSelected(this)">Inicio</a>
-                        </li>
-                        <li class="nav-item" style="margin-left: 8px;">
-                            <a class="nav-link nav-link-text" href="#services" onclick="menuItemSelected(this)">Servicios</a>
-                        </li>
-                        <li class="nav-item" style="margin-left: 8px;">
-                            <a class="nav-link nav-link-text" href="#home" onclick="menuItemSelected(this)">Retos</a>
-                        </li>
-                        <li class="nav-item" style="margin-left: 8px;">
-                            <a class="nav-link nav-link-text" href="#home" onclick="menuItemSelected(this)">Nosotros</a>
-                        </li>
-                        <li class="nav-item" style="margin-left: 8px;">
-                            <a class="nav-link nav-link-text" href="#home" onclick="menuItemSelected(this)">Contacto</a>
-                        </li>
+                        {{#mainMenu}}
+                            <li class="nav-item" style="margin-left: 8px;">
+                                <a class="nav-link nav-link-text" href="{{href}}" onclick="menuItemSelected(this)">{{innerText}}</a>
+                            </li>
+                        {{/mainMenu}}
                     </ul>
                 </div>
             </nav>
