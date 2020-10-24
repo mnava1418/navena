@@ -27,7 +27,7 @@ h1 {
   color: var(--mainGray);
   font-family: 'CMU Serif Bold', sans-serif;
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 2.7em;
   margin: 16px;
 }
 
@@ -35,7 +35,7 @@ h2 {
   color: var(--mainGray);
   font-family: 'CMU Serif Bold', sans-serif;
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin: 16px;
 }
 
@@ -43,7 +43,7 @@ h3 {
   color: var(--mainGray);
   font-family: 'Cerebri Sans', sans-serif;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 1.2em;
   margin: 16px;
 }
 
@@ -51,7 +51,7 @@ p {
   color: var(--mainGray);
   font-family: 'Cerebri Sans', sans-serif;
   font-weight: normal;
-  font-size: 0.7em;
+  font-size: 0.9em;
   margin: 0px;
 }
 
@@ -60,7 +60,7 @@ p {
   color: var(--mainGray);
   font-family: 'Cerebri Sans', sans-serif;
   font-weight: normal;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .header-container {
@@ -81,7 +81,7 @@ p {
 
 .banner-main-container {
   width: 95%;
-  height: auto;
+  height: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -137,13 +137,9 @@ p {
   padding: 16px;
   margin: 16px;
   font-family: 'Cerebri Sans', sans-serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: white;
   border-radius: 50px;
-}
-
-.btn-main:hover {
-  transform: scale(1.1);
 }
 
 /*End Generics*/
@@ -185,7 +181,7 @@ p {
 .nav-link-text {
   color: white !important;
   font-family: 'CMU Serif Roman', sans-serif;
-  font-size: 1em;
+  font-size: 1.2em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -207,7 +203,7 @@ p {
 .nav-link-selected {
   color: var(--mainGray) !important;
   font-family: 'CMU Serif Roman', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.3em;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -224,7 +220,7 @@ p {
 .main-banner {
   padding-top: var(--headerSize);
   width: 100%;
-  height: auto;
+  height: 100%;
   background-image: url('../images/mainBackground.jpg');
   background-size: cover;
   background-position: center;
@@ -268,10 +264,6 @@ p {
   align-items: center;
   border-radius: 50%;
   box-shadow: 10px 10px 15px var(--mainGray);
-}
-
-.services-item:hover {
-  transform: scale(1.1);
 }
 
 .services-item-text {
@@ -340,13 +332,8 @@ p {
     width: 100%;
   }
 
-  .main-banner {
-    height: 100%;
-  }
-
   .banner-main-container {
     width: 60%;
-    height: 100%;
     flex-direction: row;
   }
 
@@ -367,5 +354,40 @@ p {
   .main-image {
     width: 250px;
     height: 250px;
+  }
+
+  .services-item:hover {
+    transform: scale(1.1);
+    z-index: 0;
+  }
+
+  .btn-main:hover {
+    transform: scale(1.1);
+    z-index: 0;
+  }
+}
+
+@media (max-height: 568px) {
+  .banner-right-container{
+    display: none;
+  }
+
+  .services-container {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .main-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .services-container {
+    flex-direction: column;
   }
 }
