@@ -10,12 +10,31 @@ module.exports = {
         },
     ],
     services : [
-        'Historia clínica',
-        'Diagnóstico nutricional',
-        '2 Menús personalizados',
-        'Lista de alimentos intercambiables',
-        'Asesorías en WhatsApp',
-        'Diagnóstico de composición corporal(*presencial)'        
+        {
+            name: 'Presencial',
+            img: '/images/onsite.jpg',
+            price: '$500',
+            items: [
+                'Historia clínica',
+                'Diagnóstico nutricional',
+                '2 Menús personalizados',
+                'Lista de alimentos',
+                'Asesorías en WhatsApp',
+                'Diagnóstico de composición corporal'  
+            ],
+        },
+        {
+            name: 'Online',
+            img: '/images/online.jpg',
+            price: '$450',
+            items: [
+                'Historia clínica',
+                'Diagnóstico nutricional',
+                '2 Menús personalizados',
+                'Lista de alimentos',
+                'Asesorías en WhatsApp',
+            ],
+        },
     ],
     consultas: [
         {

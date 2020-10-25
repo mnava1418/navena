@@ -131,15 +131,23 @@ p {
 }
 
 .btn-main {
-  min-width: 150px;
+  min-width: 130px;
+  height: auto;
   text-align: center;
-  background-color: var(--mainPink);
   padding: 16px;
   margin: 16px;
   font-family: 'Cerebri Sans', sans-serif;
-  font-size: 1.4em;
+  font-size: 1em;
   color: white;
   border-radius: 50px;
+}
+
+.btn-navena-primary {
+  background-color: var(--mainPink);
+}
+
+.btn-navena-secondary {
+  background-color: var(--mainGreen);
 }
 
 /*End Generics*/
@@ -235,7 +243,9 @@ p {
 }
 
 .check-list {
-  margin: 32px;
+  margin: 16px;
+  margin-bottom: 32px;
+  padding: 0px;
   text-align: left;
   list-style: none;
 }
@@ -251,25 +261,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.services-item {
-  width: 150px;
-  height: 150px;
-  margin:16px 32px 32px 32px;
-  background-color: var(--mainGreen);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  box-shadow: 10px 10px 15px var(--mainGray);
-}
-
-.services-item-text {
-  color: white;
-  margin: 0;
-  font-size: 1.5em;
 }
 
 .footer {
@@ -303,6 +294,7 @@ p {
 
   .services-container {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
  
@@ -356,9 +348,8 @@ p {
     height: 250px;
   }
 
-  .services-item:hover {
-    transform: scale(1.1);
-    z-index: 0;
+  .btn-main {
+    min-width: 150px;
   }
 
   .btn-main:hover {
