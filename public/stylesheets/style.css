@@ -132,10 +132,10 @@ p {
 
 .btn-main {
   min-width: 130px;
-  height: auto;
+  height:60px;
   text-align: center;
   padding: 16px;
-  margin: 16px;
+  margin: 40px 16px 8px 16px;
   font-family: 'Cerebri Sans', sans-serif;
   font-size: 1em;
   color: white;
@@ -359,6 +359,10 @@ p {
 }
 
 @media (max-height: 568px) {
+  .btn-main {
+    margin: 8px 16px 8px 16px;
+  }
+
   .banner-right-container{
     display: none;
   }
