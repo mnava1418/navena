@@ -56,6 +56,20 @@ p {
 }
 
 /*Generics*/
+.flex-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column-direction { 
+  flex-direction: column;
+}
+
+.flex-row-direction {
+  flex-direction: row;
+}
+
 .generic-text {
   color: var(--mainGray);
   font-family: 'Cerebri Sans', sans-serif;
@@ -272,7 +286,59 @@ p {
 .footer {
   background-color: var(--mainGreen);
   width: 100%;
-  height: 72px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  color: var(--mainPink);
+  margin: 8px 0px 0px 8px;
+}
+
+.footer-icon-media {
+  color: var(--mainPink);
+  margin: 8px;
+  color: var(--mainGray);
+}
+
+.footer-text {
+  color: whitesmoke;
+  margin: 8px 8px 0px 8px;
+}
+
+.footer-content {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-section {
+  margin: 24px 40px 24px 40px;
+}
+
+.footer-copyright {
+  color: whitesmoke;
+  width: 90%;
+  height: auto;
+  text-align: center;
+  margin: 32px 24px 24px 24px;
+}
+
+.footer-img {
+  width: 300px;
+  height: 100px;
+  background-image: url('../images/navenaIntro.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 8px;
+  
 }
 
 /***Media Queries***/
@@ -360,6 +426,10 @@ p {
   .btn-main:hover {
     transform: scale(1.1);
     z-index: 0;
+  }
+
+  .footer-content {
+    flex-direction: row;
   }
 }
 
