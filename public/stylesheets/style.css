@@ -283,6 +283,23 @@ p {
   width: 90%;
 }
 
+.about-image {
+  width: 150px;
+  height: 150px;
+  margin: 24px;
+  background-image: url('../images/aboutProfile.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.about-text {
+  margin: 24px;
+  width: 70%;
+  text-align: center;
+}
+
 .footer {
   background-color: var(--mainGreen);
   width: 100%;
@@ -430,6 +447,10 @@ p {
 
   .footer-content {
     flex-direction: row;
+  }
+
+  .about-text {
+    width: 50%;
   }
 }
 

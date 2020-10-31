@@ -8,6 +8,10 @@ module.exports = {
             href: '#services',
             innerText: 'Servicios'
         },
+        {
+            href: '#about',
+            innerText: 'Acerca de mi'
+        },
     ],
     services : [
         {
