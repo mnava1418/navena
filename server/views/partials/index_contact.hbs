@@ -1,0 +1,33 @@
+<!--Contact Section-->
+<section id="contact" style="background-color: whitesmoke;">
+    <div class="banner-main-container banner-section" style="height: auto;">
+        <div class="banner-center-container">
+            <h2>Contacto</h2>
+            <form id="contactForm" class="needs-validation navena-form" novalidate>
+                <div class="form-group contact-form-input">
+                    <label for="nameInput">Nombre</label>
+                    <input type="text" class="form-control" id="nameInput" required>
+                    <div class="invalid-feedback">
+                        El nombre es obligatorio
+                    </div>
+                </div>
+                <div class="form-group contact-form-input">
+                    <label for="emailInput">Correo electrónico</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required>
+                    <div class="invalid-feedback">
+                        El correo electrónico no es válido
+                    </div>
+                </div>
+                <div class="form-group contact-form-input">
+                    <label for="exampleFormControlTextarea1">Comentarios</label>
+                    <textarea class="form-control" id="commentsInput" rows="5" required></textarea>
+                </div>
+                <button class="btn-main btn-navena-secondary btn-form" type="button" onclick="prepareComments()">Enviar</button>
+            </form>
+            <div id="contactAlert" class="alert alert-success alert-invisible">
+                Muchas gracias por tus comentarios! En breve nos estaremos poniendo en contacto contigo
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Contact Section-->

@@ -1,3 +1,29 @@
+const prepareComments = () => {
+  const form = document.getElementById('contactForm')
+  const contactAlert = document.getElementById('contactAlert')
+
+  if(contactAlert.classList.contains('alert-visible')) {
+    contactAlert.classList.remove('alert-visible')
+  }
+
+  if(!contactAlert.classList.contains('alert-invisible')) {
+    contactAlert.classList.add('alert-invisible')
+  }
+
+  if (form.checkValidity() === false) {
+    console.log('No esta listo')
+  } else {
+    console.log('Estamos listos!')
+
+    if(contactAlert.classList.contains('alert-invisible')) {
+      contactAlert.classList.remove('alert-invisible')
+    }
+
+    contactAlert.classList.add('alert-visible')
+  }
+  form.classList.add('was-validated');
+}
+
 const menuItemSelected = (item) => {
     let menuItems = document.getElementsByClassName('nav-link-selected')
 

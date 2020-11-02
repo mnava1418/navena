@@ -164,6 +164,31 @@ p {
   background-color: var(--mainGreen);
 }
 
+.btn-form {
+  border: none;
+  margin: 0px;
+  outline: none;
+}
+
+.btn-form:focus {
+  outline: none;
+  border: none;
+}
+
+.navena-form {
+  width: 95%;
+}
+
+.alert-invisible {
+  display: none;
+  position: static;
+}
+
+.alert-visible  {
+  display: inline;
+  position: static;
+}
+
 /*End Generics*/
 
 .header {
@@ -337,6 +362,10 @@ p {
 
 .footer-section {
   margin: 24px 40px 24px 40px;
+}
+
+.contact-form-input {
+  text-align: left;
 }
 
 .footer-copyright {

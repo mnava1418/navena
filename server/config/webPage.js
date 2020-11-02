@@ -12,6 +12,10 @@ module.exports = {
             href: '#about',
             innerText: 'Acerca de mí'
         },
+        {
+            href: '#contact',
+            innerText: 'Contacto'
+        },
     ],
     services : [
         {
