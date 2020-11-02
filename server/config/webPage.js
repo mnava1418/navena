@@ -10,7 +10,7 @@ module.exports = {
         },
         {
             href: '#about',
-            innerText: 'Acerca de mi'
+            innerText: 'Acerca de mí'
         },
     ],
     services : [
@@ -21,7 +21,7 @@ module.exports = {
             items: [
                 'Historia clínica',
                 'Diagnóstico nutricional',
-                '2 Menús personalizados',
+                '2 menús personalizados',
                 'Lista de alimentos',
                 'Asesorías en WhatsApp',
                 'Diagnóstico de composición corporal'  
@@ -34,7 +34,7 @@ module.exports = {
             items: [
                 'Historia clínica',
                 'Diagnóstico nutricional',
-                '2 Menús personalizados',
+                '2 menús personalizados',
                 'Lista de alimentos',
                 'Asesorías en WhatsApp',
             ],
