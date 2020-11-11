@@ -5,5 +5,6 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', indexController.loadWebPage)
+router.post('/sendEmail', indexController.sendEmail)
 
 module.exports = router;

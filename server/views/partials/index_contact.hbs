@@ -22,10 +22,13 @@
                     <label for="exampleFormControlTextarea1">Comentarios</label>
                     <textarea class="form-control" id="commentsInput" rows="5" required></textarea>
                 </div>
-                <button class="btn-main btn-navena-secondary btn-form" type="button" onclick="prepareComments()">Enviar</button>
+                <button class="btn-main btn-navena-secondary btn-form" type="button" onclick="sendComments()">Enviar</button>
             </form>
-            <div id="contactAlert" class="alert alert-success alert-invisible">
-                Muchas gracias por tus comentarios! En breve nos estaremos poniendo en contacto contigo
+            <div id="alertOk" class="alert alert-success alert-invisible">
+                Muchas gracias por tus comentarios! En breve nos estaremos poniendo en contacto contigo.
+            </div>
+            <div id="alertError" class="alert alert-danger alert-invisible">
+                Ooops! Se ha producido un error. Por favor, reintenta más tarde.
             </div>
         </div>
     </div>

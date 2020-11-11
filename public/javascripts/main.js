@@ -1,26 +1,60 @@
-const prepareComments = () => {
-  const form = document.getElementById('contactForm')
-  const contactAlert = document.getElementById('contactAlert')
+const hideAlerts = () => {
+  const alerts = document.getElementsByClassName('alert')
 
-  if(contactAlert.classList.contains('alert-visible')) {
-    contactAlert.classList.remove('alert-visible')
-  }
-
-  if(!contactAlert.classList.contains('alert-invisible')) {
-    contactAlert.classList.add('alert-invisible')
-  }
-
-  if (form.checkValidity() === false) {
-    console.log('No esta listo')
-  } else {
-    console.log('Estamos listos!')
-
-    if(contactAlert.classList.contains('alert-invisible')) {
-      contactAlert.classList.remove('alert-invisible')
+  for (const alert of alerts) {
+    if(alert.classList.contains('alert-visible')) {
+      alert.classList.remove('alert-visible')
     }
-
-    contactAlert.classList.add('alert-visible')
+  
+    if(!alert.classList.contains('alert-invisible')) {
+      alert.classList.add('alert-invisible')
+    }
   }
+}
+
+const showAlert = (alertID) => {
+  const contactAlert = document.getElementById(alertID)
+
+  if(contactAlert.classList.contains('alert-invisible')) {
+    contactAlert.classList.remove('alert-invisible')
+  }
+
+  contactAlert.classList.add('alert-visible')
+}
+
+const sendComments = () => {
+  const form = document.getElementById('contactForm')
+  hideAlerts()
+    
+  if (form.checkValidity() === true) {
+    const body = {
+      to: 'contacto@navenanutricion.com',
+      subject: `Main Contact: ${document.getElementById('nameInput').value} | ${document.getElementById('emailInput').value}`,
+      message: document.getElementById('commentsInput').value
+    }
+    
+    const options = {
+      headers:{
+        'Content-Type': 'application/json'
+      },
+      method: 'POST',
+      body: JSON.stringify(body),
+    }
+    
+    fetch('/sendEmail', options)
+    .then(res => {
+      if(res.status == 200) {
+        showAlert('alertOk')
+      } else {
+        showAlert('alertError')
+      }
+    })
+    .catch(error => {
+      console.log(error)
+      showAlert('alertError')
+    })
+  } 
+  
   form.classList.add('was-validated');
 }
 
