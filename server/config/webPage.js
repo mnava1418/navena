@@ -9,10 +9,6 @@ module.exports = {
             innerText: 'Servicios'
         },
         {
-            href: '#about',
-            innerText: 'Acerca de mí'
-        },
-        {
             href: '#contact',
             innerText: 'Contacto'
         },

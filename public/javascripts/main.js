@@ -14,12 +14,15 @@ const hideAlerts = () => {
 
 const showAlert = (alertID) => {
   const contactAlert = document.getElementById(alertID)
+  const spinner = document.getElementById('loadingSpinner')
 
   if(contactAlert.classList.contains('alert-invisible')) {
     contactAlert.classList.remove('alert-invisible')
   }
 
   contactAlert.classList.add('alert-visible')
+  spinner.classList.remove('alert-visible')
+  spinner.classList.add('alert-invisible')
 }
 
 const sendComments = () => {
@@ -27,6 +30,11 @@ const sendComments = () => {
   hideAlerts()
     
   if (form.checkValidity() === true) {
+
+    const spinner = document.getElementById('loadingSpinner')
+    spinner.classList.remove('alert-invisible')
+    spinner.classList.add('alert-visible')
+
     const body = {
       to: 'contacto@navenanutricion.com',
       subject: `Main Contact: ${document.getElementById('nameInput').value} | ${document.getElementById('emailInput').value}`,
