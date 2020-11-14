@@ -15,7 +15,7 @@ const express = require('express');
 const startHttpServer = () => {
   const httpApp = express()
   httpApp.get('*', (req, res) => {
-    res.redirect(`https://${req.headers.host}${req.url}`)
+    res.redirect(`https://navenanutricion.com${req.url}`)
   })
   
   const httpServer =  http.createServer(httpApp)
