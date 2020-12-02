@@ -312,10 +312,10 @@ p {
   width: 150px;
   height: 150px;
   margin: 24px;
-  background-image: url('../images/aboutProfile.png');
+  background-image: url('../images/aboutProfile.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   border-radius: 50%;
 }
 
